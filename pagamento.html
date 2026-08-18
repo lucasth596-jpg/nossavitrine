@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Finalizar Compra | Nossa Vitrine</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+   <header class="site-header">
+
+    <div class="header-container">
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="brand">
+
+            <div class="brand-icon">
+                NV
+            </div>
+
+            <div class="brand-text">
+                <strong>Nossa</strong>
+                <span>Vitrine</span>
+            </div>
+
+        </a>
+
+
+        <!-- MENU -->
+
+       <header class="site-header">
+
+    <div class="logo">
+        Nossa <span>Vitrine</span>
+    </div>
+
+    <nav class="menu-principal">
+
+        <a href="index.html">
+            Início
+        </a>
+
+        <a href="sobre.html">
+            Sobre
+        </a>
+
+        <a href="produtos.html">
+            Produtos
+        </a>
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+        <a href="pagamento.html">
+            Pagamento
+        </a>
+
+    </nav>
+
+</header>
+
+        </nav>
+
+
+        <!-- SEGURANÇA -->
+
+        <div class="secure-header">
+
+            <div class="secure-icon">
+                🔒
+            </div>
+
+            <div>
+                <strong>Compra segura</strong>
+                <small>Ambiente protegido</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+</header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="checkout">
+
+        <div class="checkout-title">
+
+            <span class="checkout-step">
+                ETAPA FINAL
+            </span>
+
+            <h1>Finalizar compra</h1>
+
+            <p>
+                Revise seus dados e escolha a forma de pagamento.
+            </p>
+
+        </div>
+
+
+        <div class="checkout-grid">
+
+
+            <!-- COLUNA PRINCIPAL -->
+
+            <section class="checkout-main">
+
+
+                <!-- DADOS DO CLIENTE -->
+
+                <div class="checkout-card">
+
+                    <div class="card-title">
+
+                        <div class="number">
+                            1
+                        </div>
+
+                        <div>
+                            <h2>Dados pessoais</h2>
+
+                            <p>
+                                Informe os dados para finalizar seu pedido.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="input-group full">
+
+                            <label for="nome">
+                                Nome completo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                placeholder="Digite seu nome completo"
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="email">
+                                E-mail
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="seuemail@email.com"
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="telefone">
+                                WhatsApp
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefone"
+                                placeholder="(00) 00000-0000"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAGAMENTO -->
+
+                <div class="checkout-card">
+
+                    <div class="card-title">
+
+                        <div class="number">
+                            2
+                        </div>
+
+                        <div>
+
+                            <h2>Forma de pagamento</h2>
+
+                            <p>
+                                Escolha como deseja pagar.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-options">
+
+
+                        <!-- PIX -->
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="pagamento"
+                                value="PIX"
+                            >
+
+                            <div class="payment-icon pix">
+                                PIX
+                            </div>
+
+                            <div class="payment-info">
+
+                                <strong>PIX</strong>
+
+                                <span>
+                                    Aprovação instantânea
+                                </span>
+
+                            </div>
+
+                            <div class="payment-check">
+                                ✓
+                            </div>
+
+                        </label>
+
+
+
+                        <!-- CRÉDITO -->
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="pagamento"
+                                value="Cartão de crédito"
+                            >
+
+                            <div class="payment-icon">
+                                💳
+                            </div>
+
+                            <div class="payment-info">
+
+                                <strong>
+                                    Cartão de crédito
+                                </strong>
+
+                                <span>
+                                    Visa, Mastercard, Elo e outros
+                                </span>
+
+                            </div>
+
+                            <div class="payment-check">
+                                ✓
+                            </div>
+
+                        </label>
+
+
+
+                        <!-- DÉBITO -->
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="pagamento"
+                                value="Cartão de débito"
+                            >
+
+                            <div class="payment-icon">
+                                💳
+                            </div>
+
+                            <div class="payment-info">
+
+                                <strong>
+                                    Cartão de débito
+                                </strong>
+
+                                <span>
+                                    Pagamento à vista
+                                </span>
+
+                            </div>
+
+                            <div class="payment-check">
+                                ✓
+                            </div>
+
+                        </label>
+
+
+
+                        <!-- BOLETO -->
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="pagamento"
+                                value="Boleto bancário"
+                            >
+
+                            <div class="payment-icon">
+                                📄
+                            </div>
+
+                            <div class="payment-info">
+
+                                <strong>
+                                    Boleto bancário
+                                </strong>
+
+                                <span>
+                                    Prazo de compensação bancária
+                                </span>
+
+                            </div>
+
+                            <div class="payment-check">
+                                ✓
+                            </div>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- ÁREA PIX -->
+
+                    <div
+                        id="pix-area"
+                        class="payment-extra"
+                    >
+
+                        <div class="pix-box">
+
+                            <div class="pix-symbol">
+                                PIX
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Pagamento via PIX
+                                </strong>
+
+                                <p>
+                                    Após confirmar, o código PIX
+                                    será disponibilizado.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SEGURANÇA -->
+
+                <div class="security-box">
+
+                    <div class="security-icon">
+                        🔐
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Ambiente seguro
+                        </strong>
+
+                        <p>
+                            Seus dados são utilizados apenas para
+                            processar seu pedido.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- RESUMO -->
+
+            <aside class="order-summary">
+
+                <div class="summary-header">
+
+                    <h2>Resumo do pedido</h2>
+
+                    <span>
+                        🛒
+                    </span>
+
+                </div>
+
+
+                <div class="product-summary">
+
+                    <div class="product-image">
+                        🛍️
+                    </div>
+
+                    <div class="product-details">
+
+                        <strong id="produto">
+                            Produto da Nossa Vitrine
+                        </strong>
+
+                        <span>
+                            Quantidade: 1
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-line">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong>
+                        R$ 50,00
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-line">
+
+                    <span>
+                        Frete
+                    </span>
+
+                    <strong class="free">
+                        Grátis
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-divider"></div>
+
+
+                <div class="summary-total">
+
+                    <div>
+
+                        <span>
+                            Total
+                        </span>
+
+                        <small>
+                            À vista
+                        </small>
+
+                    </div>
+
+                    <strong>
+                        R$ 50,00
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="confirm-button"
+                    onclick="confirmarCompra()"
+                >
+
+                    🔒 Confirmar compra
+
+                </button>
+
+
+                <div class="guarantees">
+
+                    <div>
+                        ✓ Compra segura
+                    </div>
+
+                    <div>
+                        ✓ Atendimento ao cliente
+                    </div>
+
+                    <div>
+                        ✓ Proteção dos dados
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- MODAL DE CONFIRMAÇÃO -->
+
+    <div
+        id="modal-confirmacao"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <span class="success-label">
+                PEDIDO REALIZADO
+            </span>
+
+            <h2>
+                Compra confirmada!
+            </h2>
+
+            <p id="mensagem-confirmacao">
+            </p>
+
+            <div class="order-number">
+
+                Número do pedido:
+
+                <strong id="numero-pedido">
+                </strong>
+
+            </div>
+
+            <button
+                onclick="voltarInicio()"
+                class="modal-button"
+            >
+                Voltar para a loja
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        /* MOSTRAR PIX */
+
+        const pagamentos =
+            document.querySelectorAll(
+                'input[name="pagamento"]'
+            );
+
+        const pixArea =
+            document.getElementById("pix-area");
+
+
+        pagamentos.forEach(function (pagamento) {
+
+            pagamento.addEventListener(
+                "change",
+                function () {
+
+                    if (this.value === "PIX") {
+
+                        pixArea.style.display = "block";
+
+                    } else {
+
+                        pixArea.style.display = "none";
+
+                    }
+
+                }
+            );
+
+        });
+
+
+
+        /* CONFIRMAR COMPRA */
+
+        function confirmarCompra() {
+
+            const nome =
+                document
+                    .getElementById("nome")
+                    .value
+                    .trim();
+
+            const email =
+                document
+                    .getElementById("email")
+                    .value
+                    .trim();
+
+            const telefone =
+                document
+                    .getElementById("telefone")
+                    .value
+                    .trim();
+
+            const pagamento =
+                document.querySelector(
+                    'input[name="pagamento"]:checked'
+                );
+
+
+            if (!nome) {
+
+                alert(
+                    "Digite seu nome completo."
+                );
+
+                return;
+
+            }
+
+
+            if (!email) {
+
+                alert(
+                    "Digite seu e-mail."
+                );
+
+                return;
+
+            }
+
+
+            if (!telefone) {
+
+                alert(
+                    "Digite seu WhatsApp."
+                );
+
+                return;
+
+            }
+
+
+            if (!pagamento) {
+
+                alert(
+                    "Selecione uma forma de pagamento."
+                );
+
+                return;
+
+            }
+
+
+            const numeroPedido =
+                Math.floor(
+                    100000 +
+                    Math.random() * 900000
+                );
+
+
+            document.getElementById(
+                "numero-pedido"
+            ).textContent =
+                "#" + numeroPedido;
+
+
+            document.getElementById(
+                "mensagem-confirmacao"
+            ).innerHTML =
+
+                "Olá, <strong>" +
+                nome +
+                "</strong>!<br><br>" +
+
+                "Seu pedido foi registrado com sucesso.<br>" +
+
+                "Forma de pagamento: <strong>" +
+                pagamento.value +
+                "</strong>.<br><br>" +
+
+                "Enviamos as informações do pedido para " +
+                "<strong>" +
+                email +
+                "</strong>.";
+
+
+            document.getElementById(
+                "modal-confirmacao"
+            ).style.display = "flex";
+
+        }
+
+
+
+        /* VOLTAR */
+
+        function voltarInicio() {
+
+            window.location.href =
+                "index.html";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
