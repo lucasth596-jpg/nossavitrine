@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 30px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+
+/* CONTATO */
+
+.contato {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 50px 20px;
+}
+
+.contato h1 {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+.descricao {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 40px;
+}
+
+
+/* CARDS */
+
+.contatos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+}
+
+.icone {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.card h2 {
+
+    margin-bottom: 10px;
+}
+
+.card p {
+
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+/* BOTÕES */
+
+.botao {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    background: #222;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.botao:hover {
+
+    opacity: 0.8;
+}
+
+.whatsapp {
+
+    background: #25D366;
+}
+
+
+/* FORMULÁRIO */
+
+.formulario {
+
+    margin-top: 40px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+}
+
+.formulario h2 {
+
+    margin-bottom: 25px;
+}
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+label {
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+
+    resize: vertical;
+}
+
+.enviar {
+
+    margin-top: 15px;
+
+    width: 100%;
+
+    background: #222;
+}
+
+#resultado {
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* RODAPÉ */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: #222;
+
+    color: white;
+
+    margin-top: 30px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .contato {
+
+        padding: 35px 15px;
+    }
+
+    .contato h1 {
+
+        font-size: 28px;
+    }
+
+    .contatos {
+
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+
+        padding: 25px 20px;
+    }
+
+}
