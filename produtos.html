@@ -2,690 +2,920 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Confira os produtos da Nossa Vitrine."
+        content="Pagamento seguro - Nossa Vitrine"
     >
 
-    <title>Produtos | Nossa Vitrine</title>
+    <title>Pagamento | Nossa Vitrine</title>
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+    <link rel="stylesheet" href="pagamento.css">
 </head>
 
-<body>
+
+<body class="pagamento-page">
 
 
-<!-- =====================================
+<!-- =====================================================
      CABEÇALHO
-===================================== -->
+===================================================== -->
 
-<header class="prod-header">
+<header class="topo">
 
-    <a
-        href="index.html"
-        class="prod-logo"
-    >
-        Nossa <span>Vitrine</span>
-    </a>
+    <div class="topo-conteudo">
 
+        <!-- LOGO -->
 
-    <nav class="prod-menu">
-
-        <a href="index.html">
-            Início
+        <a href="index.html" class="logo">
+            Nossa <span>Vitrine</span>
         </a>
 
-        <a href="sobre.html">
-            Sobre
-        </a>
 
-        <a
-            href="produtos.html"
-            class="ativo"
-        >
-            Produtos
-        </a>
+        <!-- MENU CENTRALIZADO -->
 
-        <a href="contato.html">
-            Contato
-        </a>
+        <nav class="menu">
 
-        <a href="pagamento.html">
-            Pagamento
-        </a>
+            <a href="index.html">
+                Início
+            </a>
 
-    </nav>
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+            <a href="produtos.html">
+                Produtos
+            </a>
+
+            <a href="contato.html">
+                Contato
+            </a>
+
+            <a
+                href="pagamento.html"
+                class="ativo"
+            >
+                Pagamento
+            </a>
+
+        </nav>
+
+    </div>
 
 </header>
 
 
 
-<!-- =====================================
-     APRESENTAÇÃO
-===================================== -->
+<!-- =====================================================
+     CONTEÚDO PRINCIPAL
+===================================================== -->
 
-<section class="prod-hero">
+<main class="principal">
 
-    <div>
 
-        <span class="prod-label">
-            NOSSA VITRINE
+    <!-- TÍTULO -->
+
+    <section class="titulo">
+
+        <span>
+            PAGAMENTO SEGURO
         </span>
 
         <h1>
-            Encontre o produto
-            <span>ideal para você.</span>
+            Finalize sua compra
         </h1>
 
         <p>
-            Explore nossa seleção de produtos
-            e encontre aquilo que procura de
-            forma simples, rápida e organizada.
+            Confira seu pedido e escolha a melhor
+            forma de pagamento.
         </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================
-     ÁREA DE PRODUTOS
-===================================== -->
-
-<main class="prod-container">
-
-
-    <!-- BARRA SUPERIOR -->
-
-    <div class="prod-top">
-
-        <div>
-
-            <span>
-                NOSSA SELEÇÃO
-            </span>
-
-            <h2>
-                Produtos em destaque
-            </h2>
-
-        </div>
-
-
-        <div class="prod-search">
-
-            <input
-                type="text"
-                id="pesquisaProduto"
-                placeholder="Pesquisar produto..."
-            >
-
-            <button
-                type="button"
-                onclick="pesquisarProduto()"
-            >
-                Pesquisar
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- CATEGORIAS -->
-
-    <div class="prod-categorias">
-
-        <button
-            class="categoria ativa"
-            onclick="filtrarCategoria('todos', this)"
-        >
-            Todos
-        </button>
-
-        <button
-            class="categoria"
-            onclick="filtrarCategoria('eletronicos', this)"
-        >
-            motor
-        </button>
-
-        <button
-            class="categoria"
-            onclick="filtrarCategoria('casa', this)"
-        >
-            peças para carros
-        </button>
-
-        <button
-            class="categoria"
-            onclick="filtrarCategoria('acessorios', this)"
-        >
-            Acessórios
-        </button>
-
-        <button
-            class="categoria"
-            onclick="filtrarCategoria('outros', this)"
-        >
-            Outros
-        </button>
-
-    </div>
-
-
-
-    <!-- =================================
-         GRADE DE PRODUTOS
-    ================================== -->
-
-    <section
-        class="prod-grid"
-        id="listaProdutos"
-    >
-
-
-        <!-- PRODUTO 1 -->
-
-        <article
-            class="produto-card"
-            data-categoria="eletronicos"
-            data-nome="Fone de ouvido bluetooth"
-        >
-
-            <div class="produto-imagem">
-
-                <span class="produto-badge">
-                    DESTAQUE
-                </span>
-
-                <img
-                    src="imagens/090909099.webp"
-                    alt="Fone de ouvido Bluetooth"
-                >
-
-            </div>
-
-
-            <div class="produto-info">
-
-                <span class="produto-categoria">
-                    AUTOMOTIVO
-                </span>
-
-                <h3>
-                Turbina Roletada Completa Gt4202r T4 A/r 0.60 - Garrett
-
-                </h3>
-
-                <p class="produto-descricao">
-                    Descrição
-Turbina Roletada Completa GT-4202r T4 A/r 0.60 - Garrett
-As Turbinas Roletadas Garrett são projetadas para os pilotos mais exigentes, proporcionando o desempenho ideal nos melhores carros do mercado.
-
-Disponíveis em diversos modelos, a Linha de Turbinas GT da Garrett abrange uma extensa gama de veículos, com diferentes faixas de potência e necessidades.
- Aqui você encontra soluções tanto para equipes profissionais quanto para entusiastas da alta performance.
-            
-                </p>
-
-
-                <div class="produto-preco">
-
-                    <small>
-                        R$13.201,03
-
-                    </small>
-
-                    <strong>
-                        1.466,78
-                    </strong>
-
-                </div>
-
-                <a
-                    href="pagamento.html"
-                    class="produto-btn"
-            > 
-                </a>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- PRODUTO 2 -->
-
-        <article
-            class="produto-card"
-            data-categoria="casa"
-            data-nome="Produto para casa"
-        >
-
-            <div class="produto-imagem">
-<div class="produto-imagem">
-
-                <span class="produto-badge">
-                    DESTAQUE
-                </span>
-
-                <img
-                    src="imagens/kit macaco para troca de pneus.webp"
-                    alt="Macaco Mecânico Kit Estepe Universal Chave De Roda Triângulo"
-
-
-                >
-
-            </div>
-                                    
-
-
-            </div>
-
-
-            <div class="produto-info">
-
-                <span class="produto-categoria">
-                    CASA
-                </span>
-
-                <h3>
-                   Macaco Mecânico Kit Estepe Universal Chave De Roda Triângulo
-                </h3>
-
-                <p class="imagens/kit macaco para troca de pneus.webp">
-                    
-
-
-
-                </p>
-
-
-                <div class="produto-preco">
-
-                    <small>
-                        De R$ 119,90
-                    </small>
-
-                    <strong>
-                        R$117
-                    </strong>
-
-                </div>
-
-
-                <a
-                    href="pagamento.html"
-                    class="produto-btn"
-                >
-                    Comprar agora
-                </a>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- PRODUTO 3 -->
-
-        <article
-            class="produto-card"
-            data-categoria="acessorios"
-            data-nome="Acessorio moderno"
-        >
-
-            <div class="produto-imagem">
-
-                <span class="produto-badge">
-                    NOVO
-                </span>
-
-                <img
-                    src="imagens/carro assesorio.webp"
-                    alt="Acessório"
-                >
-
-            </div>
-
-
-            <div class="produto-info">
-
-                <span class="produto-categoria">
-                    ACESSÓRIOS
-                </span>
-
-                <h3>
-                    Asa Traseira Universal Elegante Para Carro Fibra De Carbon
-Acessório Moderno
-                </h3>
-
-                <p class="produto-descricao">
-                    Design moderno para completar
-                    seu estilo.
-                </p>
-
-
-                <div class="produto-preco">
-
-                    <small>
-                        De R$ 89,90
-                    </small>
-
-                    <strong>
-                        R$ 59,90
-                    </strong>
-
-                </div>
-
-
-                <a
-                    href="pagamento.html"
-                    class="produto-btn"
-                >
-                    Comprar agora
-                </a>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- PRODUTO 4 -->
-
-        <article
-            class="produto-card"
-            data-categoria="outros"
-            data-nome="Produto especial"
-        >
-
-            <div class="produto-imagem">
-
-                <span class="produto-badge">
-                    DESTAQUE
-                </span>
-
-                <img
-                    src="foto4.jpg"
-                    alt="Produto especial"
-                >
-
-            </div>
-
-
-            <div class="produto-info">
-
-                <span class="produto-categoria">
-                    OUTROS
-                </span>
-
-                <h3>
-                    Produto Especial
-                </h3>
-
-                <p class="produto-descricao">
-                    Uma opção selecionada para
-                    você.
-                </p>
-
-
-                <div class="produto-preco">
-
-                    <small>
-                        De R$ 199,90
-                    </small>
-
-                    <strong>
-                        R$ 129,90
-                    </strong>
-
-                </div>
-
-
-                <a
-                    href="pagamento.html"
-                    class="produto-btn"
-                >
-                    Comprar agora
-                </a>
-
-            </div>
-
-        </article>
 
     </section>
 
 
 
-    <!-- NENHUM PRODUTO -->
+    <!-- =================================================
+         ÁREA DO CHECKOUT
+    ================================================== -->
 
-    <div
-        id="nenhumProduto"
-        class="nenhum-produto"
-    >
+    <section class="checkout">
 
-        <h3>
-            Produto não encontrado
-        </h3>
 
-        <p>
-            Tente pesquisar por outro nome
-            ou categoria.
-        </p>
+        <!-- =================================================
+             RESUMO DO PEDIDO
+        ================================================== -->
 
-    </div>
+        <div class="card resumo">
 
+            <div class="card-titulo">
+
+                <div>
+
+                    <span>
+                        SEU PEDIDO
+                    </span>
+
+                    <h2>
+                        Resumo da compra
+                    </h2>
+
+                </div>
+
+                <div class="check">
+                    ✓
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO -->
+
+            <div class="produto">
+
+                <div class="produto-imagem">
+                    PRODUTO
+                </div>
+
+                <div class="produto-info">
+
+                    <strong id="produtoNome">
+                        Produto selecionado
+                    </strong>
+
+                    <small>
+                        Produto da Nossa Vitrine
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUBTOTAL -->
+
+            <div class="linha">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="produtoPreco">
+                    R$ 99,90
+                </strong>
+
+            </div>
+
+
+            <!-- FRETE -->
+
+            <div class="linha">
+
+                <span>
+                    Frete
+                </span>
+
+                <strong class="gratis">
+                    Grátis
+                </strong>
+
+            </div>
+
+
+            <!-- TOTAL -->
+
+            <div class="total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="produtoTotal">
+                    R$ 99,90
+                </strong>
+
+            </div>
+
+
+            <a
+                href="produtos.html"
+                class="alterar"
+            >
+                ← Alterar produto
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             FORMAS DE PAGAMENTO
+        ================================================== -->
+
+        <div class="card pagamento">
+
+            <div class="card-titulo">
+
+                <div>
+
+                    <span>
+                        PAGAMENTO
+                    </span>
+
+                    <h2>
+                        Escolha como pagar
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- OPÇÕES -->
+
+            <div class="opcoes">
+
+
+                <!-- PIX -->
+
+                <label class="opcao selecionada">
+
+                    <input
+                        type="radio"
+                        name="pagamento"
+                        value="pix"
+                        checked
+                    >
+
+                    <div class="icone pix">
+                        PIX
+                    </div>
+
+                    <div class="texto-opcao">
+
+                        <strong>
+                            PIX
+                        </strong>
+
+                        <small>
+                            Pagamento instantâneo
+                        </small>
+
+                    </div>
+
+                </label>
+
+
+
+                <!-- CARTÃO -->
+
+                <label class="opcao">
+
+                    <input
+                        type="radio"
+                        name="pagamento"
+                        value="cartao"
+                    >
+
+                    <div class="icone">
+                        💳
+                    </div>
+
+                    <div class="texto-opcao">
+
+                        <strong>
+                            Cartão
+                        </strong>
+
+                        <small>
+                            Crédito ou débito
+                        </small>
+
+                    </div>
+
+                </label>
+
+
+
+                <!-- BOLETO -->
+
+                <label class="opcao">
+
+                    <input
+                        type="radio"
+                        name="pagamento"
+                        value="boleto"
+                    >
+
+                    <div class="icone">
+                        📄
+                    </div>
+
+                    <div class="texto-opcao">
+
+                        <strong>
+                            Boleto
+                        </strong>
+
+                        <small>
+                            Pagamento bancário
+                        </small>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PIX
+            ================================================== -->
+
+            <div
+                id="pixArea"
+                class="area-pagamento"
+            >
+
+                <div class="area-titulo">
+
+                    <span>
+                        PAGAMENTO VIA PIX
+                    </span>
+
+                    <h3>
+                        Pague com PIX
+                    </h3>
+
+                    <p>
+                        Escaneie o QR Code ou copie
+                        o código PIX Copia e Cola.
+                    </p>
+
+                </div>
+
+
+                <!-- QR CODE -->
+
+                <div class="qrcode">
+
+                    <img
+                        src="qr-code-definition.png"
+                        alt="QR Code PIX"
+                    >
+
+                </div>
+
+
+                <!-- PIX COPIA E COLA -->
+
+                <label class="label">
+                    PIX Copia e Cola
+                </label>
+
+
+                <div class="pix-copia">
+
+                    <input
+                        type="text"
+                        id="codigoPix"
+                        value="COLE_AQUI_SEU_PIX_COPIA_E_COLA"
+                        readonly
+                    >
+
+                    <button
+                        type="button"
+                        onclick="copiarPix()"
+                    >
+                        Copiar PIX
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="mensagemPix"
+                    class="mensagem"
+                ></div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CARTÃO
+            ================================================== -->
+
+            <div
+                id="cartaoArea"
+                class="area-pagamento escondido"
+            >
+
+                <div class="area-titulo">
+
+                    <span>
+                        PAGAMENTO COM CARTÃO
+                    </span>
+
+                    <h3>
+                        Cartão de crédito ou débito
+                    </h3>
+
+                </div>
+
+
+                <div class="formulario">
+
+                    <label>
+                        Número do cartão
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="0000 0000 0000 0000"
+                    >
+
+
+                    <label>
+                        Nome no cartão
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Nome completo"
+                    >
+
+
+                    <div class="duplo">
+
+                        <div>
+
+                            <label>
+                                Validade
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="MM/AA"
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label>
+                                CVV
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="000"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <label>
+                        Parcelamento
+                    </label>
+
+                    <select>
+
+                        <option>
+                            1x sem juros
+                        </option>
+
+                        <option>
+                            2x sem juros
+                        </option>
+
+                        <option>
+                            3x sem juros
+                        </option>
+
+                        <option>
+                            4x sem juros
+                        </option>
+
+                        <option>
+                            5x sem juros
+                        </option>
+
+                        <option>
+                            6x sem juros
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BOLETO
+            ================================================== -->
+
+            <div
+                id="boletoArea"
+                class="area-pagamento escondido"
+            >
+
+                <div class="area-titulo">
+
+                    <span>
+                        BOLETO BANCÁRIO
+                    </span>
+
+                    <h3>
+                        Pagamento por boleto
+                    </h3>
+
+                    <p>
+                        O boleto será disponibilizado
+                        após a confirmação do pedido.
+                    </p>
+
+                </div>
+
+
+                <div class="valor-boleto">
+
+                    <span>
+                        Valor do boleto
+                    </span>
+
+                    <strong id="valorBoleto">
+                        R$ 99,90
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="botao-boleto"
+                    onclick="gerarBoleto()"
+                >
+                    📄 Gerar boleto
+                </button>
+
+
+                <div
+                    id="mensagemBoleto"
+                    class="mensagem"
+                ></div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CONFIRMAR
+            ================================================== -->
+
+            <button
+                type="button"
+                class="botao-confirmar"
+                onclick="confirmarPagamento()"
+            >
+
+                ✓ Confirmar pagamento
+
+            </button>
+
+
+            <!-- SEGURANÇA -->
+
+            <div class="seguranca">
+
+                <div class="cadeado">
+                    🔒
+                </div>
+
+                <div>
+
+                    <strong>
+                        Pagamento seguro
+                    </strong>
+
+                    <p>
+                        Seus dados permanecem protegidos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
 
 
-<!-- =====================================
-     CHAMADA FINAL
-===================================== -->
-
-<section class="prod-cta">
-
-    <span>
-        NOSSA VITRINE
-    </span>
-
-    <h2>
-        Encontre o que você procura.
-    </h2>
-
-    <p>
-        Explore nossos produtos e faça
-        sua escolha.
-    </p>
-
-    <a
-        href="contato.html"
-        class="prod-cta-btn"
-    >
-        Falar conosco
-    </a>
-
-</section>
-
-
-
-<!-- =====================================
+<!-- =====================================================
      RODAPÉ
-===================================== -->
+===================================================== -->
 
-<footer class="prod-footer">
+<footer>
 
-    <div>
-
-        <strong>
-            Nossa Vitrine
-        </strong>
-
-        <p>
-            Sua vitrine. Sua escolha.
-        </p>
-
-    </div>
-
+    <strong>
+        Nossa <span>Vitrine</span>
+    </strong>
 
     <p>
-        © 2026 Nossa Vitrine
+        © 2026 Nossa Vitrine. Todos os direitos reservados.
     </p>
 
 </footer>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      JAVASCRIPT
-===================================== -->
+===================================================== -->
 
 <script>
 
-function filtrarCategoria(categoria, botao) {
+/* ==========================================
+   CARREGAR PRODUTO
+========================================== */
 
-    const produtos =
-        document.querySelectorAll(".produto-card");
+function carregarProduto() {
 
-    const botoes =
-        document.querySelectorAll(".categoria");
+    const produtoSalvo =
+        localStorage.getItem("produtoCompra");
 
-    const nenhum =
-        document.getElementById("nenhumProduto");
-
-
-    botoes.forEach(function(btn) {
-
-        btn.classList.remove("ativa");
-
-    });
-
-
-    botao.classList.add("ativa");
-
-
-    let encontrados = 0;
-
-
-    produtos.forEach(function(produto) {
-
-        if (
-            categoria === "todos" ||
-            produto.dataset.categoria === categoria
-        ) {
-
-            produto.style.display = "flex";
-
-            encontrados++;
-
-        } else {
-
-            produto.style.display = "none";
-
-        }
-
-    });
-
-
-    if (encontrados === 0) {
-
-        nenhum.style.display = "block";
-
-    } else {
-
-        nenhum.style.display = "none";
-
+    if (!produtoSalvo) {
+        return;
     }
 
-}
+    try {
 
-
-function pesquisarProduto() {
-
-    const pesquisa =
-        document
-        .getElementById("pesquisaProduto")
-        .value
-        .toLowerCase()
-        .trim();
-
-
-    const produtos =
-        document.querySelectorAll(".produto-card");
-
-
-    const nenhum =
-        document.getElementById("nenhumProduto");
-
-
-    let encontrados = 0;
-
-
-    produtos.forEach(function(produto) {
+        const produto =
+            JSON.parse(produtoSalvo);
 
         const nome =
-            produto.dataset.nome.toLowerCase();
+            produto.nome || "Produto selecionado";
 
+        const preco =
+            Number(produto.preco) || 99.90;
 
-        if (nome.includes(pesquisa)) {
+        const valor =
+            preco.toLocaleString(
+                "pt-BR",
+                {
+                    style: "currency",
+                    currency: "BRL"
+                }
+            );
 
-            produto.style.display = "flex";
+        document.getElementById(
+            "produtoNome"
+        ).textContent = nome;
 
-            encontrados++;
+        document.getElementById(
+            "produtoPreco"
+        ).textContent = valor;
 
-        } else {
+        document.getElementById(
+            "produtoTotal"
+        ).textContent = valor;
 
-            produto.style.display = "none";
+        document.getElementById(
+            "valorBoleto"
+        ).textContent = valor;
 
-        }
+    } catch (erro) {
 
-    });
-
-
-    if (encontrados === 0) {
-
-        nenhum.style.display = "block";
-
-    } else {
-
-        nenhum.style.display = "none";
+        console.error(
+            "Erro ao carregar produto:",
+            erro
+        );
 
     }
 
 }
 
 
-document
-.getElementById("pesquisaProduto")
-.addEventListener("keyup", function(event) {
 
-    if (event.key === "Enter") {
+/* ==========================================
+   TROCAR FORMA DE PAGAMENTO
+========================================== */
 
-        pesquisarProduto();
+const formas =
+    document.querySelectorAll(
+        'input[name="pagamento"]'
+    );
 
-    }
+
+formas.forEach(function(forma) {
+
+    forma.addEventListener(
+        "change",
+        function() {
+
+            document
+                .querySelectorAll(".opcao")
+                .forEach(function(item) {
+
+                    item.classList.remove(
+                        "selecionada"
+                    );
+
+                });
+
+
+            forma
+                .closest(".opcao")
+                .classList.add(
+                    "selecionada"
+                );
+
+
+            document
+                .querySelectorAll(
+                    ".area-pagamento"
+                )
+                .forEach(function(area) {
+
+                    area.classList.add(
+                        "escondido"
+                    );
+
+                });
+
+
+            if (forma.value === "pix") {
+
+                document
+                    .getElementById("pixArea")
+                    .classList.remove(
+                        "escondido"
+                    );
+
+            }
+
+
+            if (forma.value === "cartao") {
+
+                document
+                    .getElementById("cartaoArea")
+                    .classList.remove(
+                        "escondido"
+                    );
+
+            }
+
+
+            if (forma.value === "boleto") {
+
+                document
+                    .getElementById("boletoArea")
+                    .classList.remove(
+                        "escondido"
+                    );
+
+            }
+
+        }
+    );
 
 });
+
+
+
+/* ==========================================
+   COPIAR PIX
+========================================== */
+
+function copiarPix() {
+
+    const codigo =
+        document.getElementById(
+            "codigoPix"
+        );
+
+    const mensagem =
+        document.getElementById(
+            "mensagemPix"
+        );
+
+
+    navigator.clipboard
+        .writeText(codigo.value)
+        .then(function() {
+
+            mensagem.textContent =
+                "✓ Código PIX copiado com sucesso!";
+
+        })
+        .catch(function() {
+
+            codigo.select();
+
+            document.execCommand("copy");
+
+            mensagem.textContent =
+                "✓ Código PIX copiado!";
+
+        });
+
+}
+
+
+
+/* ==========================================
+   BOLETO
+========================================== */
+
+function gerarBoleto() {
+
+    const valor =
+        document.getElementById(
+            "produtoTotal"
+        ).textContent;
+
+
+    document.getElementById(
+        "mensagemBoleto"
+    ).textContent =
+        "✓ Boleto preparado. Valor: " + valor;
+
+}
+
+
+
+/* ==========================================
+   CONFIRMAR
+========================================== */
+
+function confirmarPagamento() {
+
+    const produto =
+        document.getElementById(
+            "produtoNome"
+        ).textContent;
+
+
+    const valor =
+        document.getElementById(
+            "produtoTotal"
+        ).textContent;
+
+
+    const forma =
+        document.querySelector(
+            'input[name="pagamento"]:checked'
+        ).value;
+
+
+    let pagamento = "PIX";
+
+
+    if (forma === "cartao") {
+        pagamento = "Cartão";
+    }
+
+
+    if (forma === "boleto") {
+        pagamento = "Boleto";
+    }
+
+
+    alert(
+        "✓ Pedido confirmado!\n\n" +
+        "Produto: " + produto +
+        "\nValor: " + valor +
+        "\nPagamento: " + pagamento +
+        "\n\nSeu pedido foi registrado."
+    );
+
+}
+
+
+
+/* ==========================================
+   INICIAR
+========================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    carregarProduto
+);
 
 </script>
 
 
 </body>
-
 </html>
